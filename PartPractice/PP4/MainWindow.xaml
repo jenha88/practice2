@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFBAF3DD">
-        
+        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="351" Margin="427,33,0,0" VerticalAlignment="Top" Width="324"/>
+        <TextBox x:Name="txtF" HorizontalAlignment="Left" Height="26" Margin="54,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="txtL" HorizontalAlignment="Left" Height="26" Margin="54,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="txtE" HorizontalAlignment="Left" Height="26" Margin="54,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="261,57,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

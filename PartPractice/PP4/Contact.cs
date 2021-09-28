@@ -22,9 +22,9 @@ namespace PP4
         public Contact(string data)
         {
             var files = data;
-            Firstname = files[1];
-            Lastname = files[2];
-            Email = files[3];
+            Firstname = files[2];
+            Lastname = files[3];
+            Email = files[4];
         }
 
         public override string ToString()
