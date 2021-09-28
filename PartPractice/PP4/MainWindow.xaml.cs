@@ -21,22 +21,20 @@ namespace PP4
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<Contacts> CC = new List<Contacts>();
+        private List<Contact> CC = new List<Contact>();
         public MainWindow()
         {
             InitializeComponent();
 
-            var lines = File.ReadAllLines("contact.txt").Skip(1);
-
-            foreach (var item in lines)
+            var line = File.ReadAllLines("contacts.txt").Skip(1);
+            foreach (var item in line)
             {
-                CC.Add(new Contacts(item));
+                CC.Add(new Contact(item));
             }
-        }
-
-        private void lstbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            foreach (var cc in CC)
+            {
+                
+            }
         }
     }
 }

@@ -53,7 +53,7 @@ namespace PP3
                 MessageBox.Show("Sorry that is an invalid image");
             }
 
-            //overloaded constructor 
+            //overloaded c
             Toys TT = new Toys()
             {
                 Manufacturer = manufacturer,

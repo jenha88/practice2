@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C061589B-A8F0-447E-A480-55F57CE84F1E}</ProjectGuid>
+    <ProjectGuid>{122F6B34-F4D8-4BDB-9340-9690B2A951A7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PP4</RootNamespace>
     <AssemblyName>PP4</AssemblyName>
@@ -63,7 +63,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Contacts.cs" />
+    <Compile Include="Contact.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
