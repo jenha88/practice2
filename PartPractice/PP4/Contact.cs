@@ -11,20 +11,24 @@ namespace PP4
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Email { get; set; }
+        public string Image { get; set; }
 
         public Contact()
         {
             Firstname = "";
             Lastname = "";
             Email = "";
+            Image = "";
         }
 
         public Contact(string data)
         {
-            var files = data;
-            Firstname = files[2];
-            Lastname = files[3];
-            Email = files[4];
+            var files = data.Split('|');
+            Firstname = files[1];
+            Lastname = files[2];
+            Email = files[3];
+            Image = files[4];
+
         }
 
         public override string ToString()

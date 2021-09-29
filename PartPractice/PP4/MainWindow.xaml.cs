@@ -33,8 +33,22 @@ namespace PP4
             }
             foreach (var cc in CC)
             {
-                
+                lstBox.Items.Add(cc);
             }
+        }
+
+
+        private void lstBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Contact selectingItem = (Contact)lstBox.SelectedItem;
+            var uri = new Uri(selectingItem.Image);
+            var img = new BitmapImage(uri);
+            Photo.Source = img;
+
+
+            txtF.Text = selectingItem.Firstname;
+            txtL.Text = selectingItem.Lastname;
+            txtE.Text = selectingItem.Email;
         }
     }
 }

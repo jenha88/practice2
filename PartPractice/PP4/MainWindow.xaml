@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFBAF3DD">
-        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="351" Margin="427,33,0,0" VerticalAlignment="Top" Width="324"/>
+        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="336" Margin="457,33,0,0" VerticalAlignment="Top" Width="294" SelectionChanged="lstBox_SelectionChanged"/>
         <TextBox x:Name="txtF" HorizontalAlignment="Left" Height="26" Margin="162,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <TextBox x:Name="txtL" HorizontalAlignment="Left" Height="26" Margin="160,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
         <TextBox x:Name="txtE" HorizontalAlignment="Left" Height="26" Margin="162,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="27,96,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="27,220,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="FirstName" HorizontalAlignment="Left" Margin="27,96,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="LastName" HorizontalAlignment="Left" Margin="27,152,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="27,218,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.436,0.611"/>
+        <Button x:Name="btb" Content="Push" HorizontalAlignment="Left" Margin="43,287,0,0" VerticalAlignment="Top" Width="75" />
+        <Image x:Name="Photo" HorizontalAlignment="Left" Height="158" Margin="249,262,0,0" VerticalAlignment="Top" Width="173" RenderTransformOrigin="0.585,0.44"/>
 
     </Grid>
 </Window>
